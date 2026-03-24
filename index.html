@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco Briquettes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <!-- Header / Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Clean, Efficient, and Eco-Friendly Charcoal Briquettes</h1>
+      <p>Sustainable fuel for your home, business, and outdoor adventures.</p>
+      <a href="#order" class="btn">Order Now</a>
+      <a href="#benefits" class="btn btn-secondary">Learn More</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>Why Choose Our Briquettes?</h2>
+    <p>Made from 100% recycled biomass (sawdust, coconut shells, crop waste). Burns longer than traditional charcoal. Low smoke and odor – safe for indoor cooking. Affordable and locally produced.</p>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits">
+    <h2>The Advantages of Using Our Briquettes</h2>
+    <div class="benefit-cards">
+      <div class="card"><h3>Eco-Friendly</h3><p>Reduce deforestation and carbon emissions.</p></div>
+      <div class="card"><h3>Cost-Effective</h3><p>Longer burn time saves money.</p></div>
+      <div class="card"><h3>Consistent Quality</h3><p>Uniform size for reliable cooking.</p></div>
+      <div class="card"><h3>Smoke Free Cooking</h3><p>Cleaner, healthier meals.</p></div>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product-cards">
+      <div class="card">
+        <h3>Home Briquettes</h3>
+        <p>2kg bag – mk 3000</p>
+      </div>
+      <div class="card">
+        <h3>BBQ Briquettes</h3>
+        <p>5kg bag – mk 7000</p>
+      </div>
+      <div class="card">
+        <h3>Industrial Briquettes</h3>
+        <p>20kg bulk – mk 25000</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Form Section -->
+  <section id="order">
+    <h2>Order Your Briquettes Today</h2>
+    <form id="orderForm" action="/order" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="email" name="email" placeholder="Email (optional)">
+      <select name="product" required>
+        <option value="">Select Product</option>
+        <option value="home">Home Briquettes 2kg</option>
+        <option value="bbq">BBQ Briquettes 5kg</option>
+        <option value="industrial">Industrial Briquettes 20kg</option>
+      </select>
+      <input type="number" name="quantity" placeholder="Quantity" min="1" required>
+      <textarea name="address" placeholder="Delivery Address" required></textarea>
+      <button type="submit" class="btn">Place Order</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Chile Energy Briquettes | Contact: +265 995 314 298 | info@chileenergybriquettes.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
